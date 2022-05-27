@@ -63,6 +63,7 @@ namespace _3_tier_archi
             this.dataGridViewStoreManage.RowTemplate.Height = 24;
             this.dataGridViewStoreManage.Size = new System.Drawing.Size(701, 395);
             this.dataGridViewStoreManage.TabIndex = 111;
+            this.dataGridViewStoreManage.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewStoreManage_CellClick);
             // 
             // btnDelete
             // 
@@ -73,6 +74,7 @@ namespace _3_tier_archi
             this.btnDelete.TabIndex = 110;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -83,6 +85,7 @@ namespace _3_tier_archi
             this.btnUpdate.TabIndex = 109;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -93,6 +96,7 @@ namespace _3_tier_archi
             this.btnAdd.TabIndex = 108;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtStorePhone
             // 
@@ -161,6 +165,7 @@ namespace _3_tier_archi
             this.Controls.Add(this.txtStoreID);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStoreManage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
