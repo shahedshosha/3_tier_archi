@@ -10,7 +10,7 @@ namespace _3_tier_archi.entities
 {
     public class StoresDAL
     {
-        private static string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\pc\\source\\repos\\assignment1_archi\\assignment1_archi\\bin\\Debug\\Assignment.accdb";
+        private static string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\pc\\source\\repos\\3_tier_archi\\3_tier_archi\\bin\\Debug\\Assignment.accdb";
 
         private static OleDbConnection conn = new OleDbConnection(connectionString);
         public static void InsertCommand(Stores store)
